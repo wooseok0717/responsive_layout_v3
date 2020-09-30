@@ -1,0 +1,20 @@
+* {
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+    border: 0;
+}
+
+body {
+    text-align: center;
+}
+
+li {
+    list-style-type: none;
+}
+
+header {
+    background-color: aquamarine;
+}
