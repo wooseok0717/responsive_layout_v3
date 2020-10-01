@@ -1,3 +1,8 @@
+/* ================================
+    Base Element Styles
+================================ */
+
+
 * {
     box-sizing: border-box;
 }
@@ -9,12 +14,125 @@ img {
 
 body {
     text-align: center;
+    font-family: sans-serif;
 }
 
 li {
     list-style-type: none;
+    margin-left: 0;
 }
 
 header {
-    background-color: aquamarine;
+    background-color: rgb(159, 241, 173);
+    padding: 1em 2em 2em;
+}
+
+a{
+    text-decoration: none;
+}
+
+h3 {
+    font-weight: 500;
+}
+
+
+
+/* ================================
+    Class Styles
+================================ */
+
+.portrait {
+    margin: 15px 5%;
+}
+
+.intro,
+.contact-info {
+    padding: 10px 5% 20px;
+    font-size: 1.2em;
+}
+
+.main-nav a {
+    color: rgb(159, 241, 173);
+}
+
+.main-nav li {
+    background-color: rgb(22, 148, 5);
+    margin-bottom: 5px;
+    font-size: 1.5em;
+    padding: 10px;
+    font-weight: 600;
+}
+
+.main-footer {
+    background: rgb(159, 241, 173);
+    padding: 1em;
+}
+
+.bottom-nav {
+    border-top: rgb(22, 148, 5);
+}
+
+/* ================================
+    Class Styles
+================================ */
+
+
+@media (min-width: 769px) {
+  
+    figure {
+        width: 40%;
+        float: left;
+        margin: 4%;
+    }
+
+    .portrait {
+        float: right;
+    }
+
+    .intro {
+        padding-top: 2em;
+        text-align: left;
+    }
+
+    .main-nav li {
+        display: inline-block;
+        margin: 10px;
+    }
+
+/* ----- Clearfix -------- */
+    .clearfix::after {
+		content: " ";
+		display: table;
+		clear: both;
+    }
+
+}
+
+@media (min-width: 1025px) {
+
+    .main-header {
+        float: left;
+    }
+
+    .main-nav {
+        float: right;
+    }
+
+
+    figure {
+        width: 30%;
+        margin: 1%;
+    }
+
+    .contact-info {
+        width: 75%;
+        margin:auto;
+    }
+
+    .intro,
+    .contact-info {
+        font-size: 1.5em;
+    }
+
+
 }
